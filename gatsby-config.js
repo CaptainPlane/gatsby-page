@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/gatsby-page",
   siteMetadata: {
     title: `Example for Gallery`,
     description: `Just a simple example page to demo the gatsby-image-gallery.`,
