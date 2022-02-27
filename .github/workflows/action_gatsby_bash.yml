@@ -21,7 +21,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Dependencies
         run: npm install
-      - name: Lint
-        run: npm run lint
-      - name: Test
-        run: npm run test
+      - name: Bash Gatsby
+        run: gatsby build
