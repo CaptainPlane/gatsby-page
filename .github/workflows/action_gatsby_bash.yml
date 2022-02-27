@@ -20,4 +20,6 @@ jobs:
           npm install
           npm install -g gatsby-cli
      - name: Bash Gatsby
-       run: gatsby build
+       run: |
+         gatsby build
+         ls -lah
