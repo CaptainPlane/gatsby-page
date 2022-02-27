@@ -22,4 +22,4 @@ jobs:
      - name: Bash Gatsby
        run: |
          gatsby build
-         ls -lah
+         ls -lah public
