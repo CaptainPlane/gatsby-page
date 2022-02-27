@@ -4,7 +4,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Gallery from '../../../gatsby-image-gallery/src'
+import Gallery from '../.components/gatsby-image-gallery/src'
 
 interface ImageSharpEdge {
   node: {
