@@ -1,0 +1,16 @@
+name: Gatsby Bash
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: bash
+        run: |
+          gatsby build
