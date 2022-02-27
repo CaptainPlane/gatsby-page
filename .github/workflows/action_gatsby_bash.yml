@@ -9,19 +9,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Dependencies
-        run: | 
+     - uses: actions/checkout@v2
+     - uses: actions/setup-node@v2
+       with:
+         node-version: '16'
+         cache: 'npm'
+     - name: Dependencies
+       run: | 
           npm install
           npm install -g gatsby-cli
-      - name: Bash Gatsby
-        run: gatsby build
+     - name: Bash Gatsby
+       run: gatsby build
